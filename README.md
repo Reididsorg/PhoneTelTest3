@@ -1,6 +1,6 @@
 # PhoneTelTest3
 
-Snowtricks is a community website, with aim to popularize and learn snowboard by sharing snowboard tricks.
+BileMo is an API web service with aim to expose mobile phones catalog to different shops with privacy access.
 
 ## Development environment
 PHP 8.0
