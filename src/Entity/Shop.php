@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
 use App\Repository\ShopRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -10,7 +11,9 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * @ORM\Entity(repositoryClass=ShopRepository::class)
  */
-#[ApiResource]
+#[ApiResource(
+    subresourceOperations: [],
+)]
 class Shop implements UserInterface
 {
     /**
@@ -29,6 +32,12 @@ class Shop implements UserInterface
      * @ORM\Column(type="string", length=255)
      */
     private $password;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="shop", orphanRemoval=true)
+     */
+    #[ApiSubresource]
+    private $users;
 
     public function getId(): ?int
     {
@@ -57,6 +66,16 @@ class Shop implements UserInterface
         $this->password = $password;
 
         return $this;
+    }
+
+    public function getUsers()
+    {
+        return $this->users;
+    }
+
+    public function setUsers($users): void
+    {
+        $this->users = $users;
     }
 
     public function __construct()
