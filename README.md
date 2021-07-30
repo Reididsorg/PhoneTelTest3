@@ -16,16 +16,19 @@ Composer 1.11.99
     - git clone https://github.com/Reididsorg/PhoneTelTest3.git
 
 2. Install dependancies
-    - composer install
+    - composer install  
       You may alternatively need to run :
-- php composer.phar install
+- php composer.phar install  
   (Depending on how you installed Composer)
 
 3. Clone '.env' file at root project and rename it '.env.local', in order to configure environment vars and make any adjustments you need - specifically
    'DATABASE_URL'.
    Then, *override* any configuration you need there (instead of changing '.env' directly).
+   
+4. Generate SSL authentication keys
+     - php bin/console lexik:jwt:generate-keypair
 
-4. Setup the database and Install fixtures
+5. Setup the database and Install fixtures
     - bin/console doctrine:database:create (or manually create database)
     - bin/console doctrine:migrations:diff
     - bin/console doctrine:migrations:migrate
