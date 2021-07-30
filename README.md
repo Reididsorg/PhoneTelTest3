@@ -13,7 +13,7 @@ Composer 1.11.99
 ## Installation
 
 1. Clone Github repository
-    - git clone https://github.com/Reididsorg/PhoneTelTest1.git
+    - git clone https://github.com/Reididsorg/PhoneTelTest3.git
 
 2. Install dependancies
     - composer install
