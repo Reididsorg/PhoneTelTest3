@@ -17,23 +17,23 @@ class User
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $id;
 
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $username;
+    private string $username;
 
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $name;
+    private string $name;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Shop", inversedBy="users")
      * @ORM\JoinColumn(name="shop_id", referencedColumnName="id")
      */
-    private $shop;
+    private Shop $shop;
 
     public function getId(): ?int
     {

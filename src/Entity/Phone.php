@@ -22,17 +22,17 @@ class Phone
     /**
      * @ORM\Column(type="string", length=50)
      */
-    private $name;
+    private string $name;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $description;
+    private string $description;
 
     /**
      * @ORM\Column(type="date")
      */
-    private $year;
+    private \DateTimeInterface $year;
 
     public function getId(): ?int
     {
