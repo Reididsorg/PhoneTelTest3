@@ -21,8 +21,8 @@ Composer 1.11.99
     - php composer.phar install  
     (Depending on how you installed Composer)
 
-3. Clone '.env' file at root project and rename it '.env.local', in order to configure environment vars and make any adjustments you need - specifically
-   'DATABASE_URL'.
+3. Clone '.env' file at root project and rename it '.env.local', in order to configure environment vars and make any adjustments you need.   
+   Specifically : 'DATABASE_URL'.  
    Then, *override* any configuration you need there (instead of changing '.env' directly).
    
 4. Generate SSL authentication keys
