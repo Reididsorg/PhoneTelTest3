@@ -5,16 +5,33 @@ namespace App\Entity;
 use ApiPlatform\Core\Annotation\ApiResource;
 use ApiPlatform\Core\Annotation\ApiSubresource;
 use App\Repository\ShopRepository;
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=ShopRepository::class)
+ *
+ * @ApiResource(
+ *     itemOperations={
+ *          "get",
+ *     },
+ *     collectionOperations={},
+ * )
  */
-#[ApiResource(
-    subresourceOperations: [],
-)]
+//#[ApiResource(
+//    collectionOperations: [
+//        //'get',
+//        //'post',
+//    ],
+//    itemOperations: [
+//        'get',
+//        //'delete',
+//        //'put',
+//        //'patch',
+//    ],
+//)]
 class Shop implements UserInterface
 {
     /**
@@ -37,7 +54,6 @@ class Shop implements UserInterface
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="shop", orphanRemoval=true)
      */
-    #[ApiSubresource]
     private Collection $users;
 
     public function getId(): ?int
@@ -82,6 +98,7 @@ class Shop implements UserInterface
     public function __construct()
     {
         $this->roles[] = 'ROLE_USER';
+        $this->users = new ArrayCollection();
     }
 
     /**
@@ -106,8 +123,8 @@ class Shop implements UserInterface
         return;
     }
 
-    public function getUserIdentifier()
-    {
-        return;
-    }
+//    public function getUserIdentifier()
+//    {
+//        return;
+//    }
 }
