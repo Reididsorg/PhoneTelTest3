@@ -47,4 +47,13 @@ class ShopRepository extends ServiceEntityRepository
         ;
     }
     */
+    public function findOneByName($value): ?Shop
+    {
+        return $this->createQueryBuilder('s')
+            ->andWhere('s.username = :val')
+            ->setParameter('val', $value)
+            ->getQuery()
+            ->getOneOrNullResult()
+            ;
+    }
 }

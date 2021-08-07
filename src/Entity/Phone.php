@@ -9,7 +9,18 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity(repositoryClass=PhoneRepository::class)
  */
-#[ApiResource]
+#[ApiResource(
+    collectionOperations: [
+        'get',
+        //'post',
+    ],
+    itemOperations: [
+        'get',
+        //'delete',
+        //'put',
+        //'patch',
+    ],
+)]
 class Phone
 {
     /**
@@ -41,6 +52,7 @@ class Phone
 
     public function getName(): ?string
     {
+        //dump($this->name);
         return $this->name;
     }
 
