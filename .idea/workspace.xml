@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="48f3497e-a8ac-4a42-bbac-421e8b2cbd8c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210807155126.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210807161440.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
