@@ -35,6 +35,7 @@ Composer 1.11.99
     - bin/console doctrine:fixtures:load
 
 Open local website in web browser :)
+
 Find API documentation at : http://yourAdressDomain.local/api/docs
 
 ## Codacy Badge
