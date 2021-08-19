@@ -35,6 +35,7 @@ Composer 1.11.99
     - bin/console doctrine:fixtures:load
 
 Open local website in web browser :)
+Find API documentation at : http://yourAdressDomain.local/api/docs
 
 ## Codacy Badge
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/38ad940a7d2d467bb18fbe3ad77127cc)](https://www.codacy.com/gh/Reididsorg/PhoneTelTest3/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Reididsorg/PhoneTelTest3&amp;utm_campaign=Badge_Grade)
