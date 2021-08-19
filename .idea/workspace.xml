@@ -2,16 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48f3497e-a8ac-4a42-bbac-421e8b2cbd8c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/BrandFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ColorFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/ConfigurableProductFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/MemoryFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/OperatingSystemFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/PhoneHasColorFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/PhoneHasPictureFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/PictureFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/SizeFixture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Brand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Color.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/ConfigurableProduct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Memory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/OperatingSystem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PhoneHasColor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PhoneHasPicture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Picture.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Size.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/BrandRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ColorRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ConfigurableProductRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MemoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/OperatingSystemRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PhoneHasColorRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PhoneHasPictureRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PictureRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/SizeRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210807161440.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/PhoneFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/PhoneFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ShopFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ShopFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/UserFixture.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/UserFixture.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Phone.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Phone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OpenApi/JwtDecorator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenApi/JwtDecorator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TokenRepository.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -136,6 +170,8 @@
       <option name="presentableId" value="Default" />
       <updated>1628077562163</updated>
       <workItem from="1628077563646" duration="44668000" />
+      <workItem from="1629120604543" duration="20216000" />
+      <workItem from="1629184897482" duration="46565000" />
     </task>
     <servers />
   </component>
@@ -158,9 +194,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/Entity/Phone.php</url>
-          <line>54</line>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/DataFixtures/PhoneHasColorFixture.php</url>
+          <line>25</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
