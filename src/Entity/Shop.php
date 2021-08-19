@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
-use ApiPlatform\Core\Annotation\ApiSubresource;
 use App\Repository\ShopRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -15,7 +14,11 @@ use Symfony\Component\Security\Core\User\UserInterface;
  *
  * @ApiResource(
  *     itemOperations={
- *          "get",
+ *          "get"={
+ *              "openapi_context"={
+ *                  "summary"="hidden"
+ *              }
+ *          }
  *     },
  *     collectionOperations={},
  * )

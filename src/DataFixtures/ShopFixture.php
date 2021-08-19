@@ -26,7 +26,7 @@ class ShopFixture extends Fixture
     public function load(ObjectManager $manager)
     {
         for ($i = 1; $i < 6; $i++) {
-            $shopUsername = 'Shop n°' . $i;
+            $shopUsername = 'magasin' . $i;
             $encoder = $this->passwordHash->getPasswordHasher(Shop::class);
             $shopPasswordCrypted = $encoder->hash('1234');
             $shop = new Shop();

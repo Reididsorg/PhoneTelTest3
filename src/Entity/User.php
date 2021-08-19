@@ -48,18 +48,19 @@ class User
     /**
      * @ORM\Column(type="string", length=50)
      * @Assert\NotBlank(message="Champ obligatoire !")
-     * @Assert\Length(min=4, minMessage="Le nom d'utilisateur est trop court. Il doit faire au moins 4 caractères")
-     * @Assert\Length(max=50, maxMessage="Le nom d'utilisateur est trop long. Il ne doit pas faire plus de 50 caractères")
+     * @Assert\Length(min=4, minMessage="Le courriel est trop court. Il doit faire au moins 4 caractères")
+     * @Assert\Length(max=50, maxMessage="Le courriel est trop long. Il ne doit pas faire plus de 50 caractères")
      */
     private string $username;
 
     /**
      * @ORM\Column(type="string", length=50)
      * @Assert\NotBlank(message="Champ obligatoire !")
+     * @Assert\Email(message="L'adresse de courriel '{{ value }}' n'est pas valide.")
      * @Assert\Length(min=4, minMessage="Le nom d'utilisateur est trop court. Il doit faire au moins 4 caractères")
      * @Assert\Length(max=50, maxMessage="Le nom d'utilisateur est trop long. Il ne doit pas faire plus de 50 caractères")
      */
-    private string $name;
+    private string $email;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Shop", inversedBy="users")
@@ -84,16 +85,20 @@ class User
         return $this;
     }
 
-    public function getName(): ?string
+    /**
+     * @return string
+     */
+    public function getEmail(): string
     {
-        return $this->name;
+        return $this->email;
     }
 
-    public function setName(string $name): self
+    /**
+     * @param string $email
+     */
+    public function setEmail(string $email): void
     {
-        $this->name = $name;
-
-        return $this;
+        $this->email = $email;
     }
 
     public function getShop()
